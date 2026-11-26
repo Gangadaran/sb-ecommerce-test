@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ApiTest {
 
     // Base URL (can override via -DbaseUrl=...)
-    String baseUrl = System.getProperty("baseUrl", "http://54.153.164.199:3000/");
+    String baseUrl = System.getProperty("baseUrl", "http://54.153.164.199:8080/");
 
     @BeforeEach
     void setup() {
