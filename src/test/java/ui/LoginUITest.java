@@ -27,7 +27,7 @@ public class LoginUITest {
 
         WebDriver driver = new ChromeDriver(options);
 
-        String baseUrl = System.getProperty("baseUrl", "http://3.7.60.195:3000/");
+        String baseUrl = System.getProperty("baseUrl", "http://54.153.164.199:3000/");
 
         driver.get(baseUrl);
 
