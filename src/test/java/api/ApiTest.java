@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class ApiTest {
 
     // Base URL (can override via -DbaseUrl=...)
-    String baseUrl = System.getProperty("baseUrl", "http://54.153.164.199:8080/");
+    String baseUrl = System.getProperty("baseUrl", "http://3.25.80.45:8080/");
 
     @BeforeEach
     void setup() {
@@ -74,6 +74,6 @@ public class ApiTest {
                         .extract().response();
 
         // ✅ Negative validation
-        assertEquals(401, response.getStatusCode());
+        assertEquals(403, response.getStatusCode());
     }
 }
